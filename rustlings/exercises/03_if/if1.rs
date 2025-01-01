@@ -4,6 +4,10 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+    match (a, b) {
+        (a, b) if a >= b => a,
+        (_, b) => b,
+    }
 }
 
 fn main() {
